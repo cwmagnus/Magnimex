@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\External">
+      <UniqueIdentifier>{07f17ef5-0286-4ac3-ab2d-e33d71278a10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\FunctionCaller.h">
@@ -26,8 +29,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\glad.c">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\glfw.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\External</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
