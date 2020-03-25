@@ -27,13 +27,22 @@
     <ClInclude Include="..\..\Source\MemberFunctionCaller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\RenderAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\glad.c">
-      <Filter>Source Files\External</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\glfw.c">
       <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RenderAPI.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

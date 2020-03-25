@@ -74,7 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)../../External/glfw/include;$(SolutionDir)../../External/glad/include;$(SolutionDir)../../External/glm;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)../../External/glfw/include;$(SolutionDir)../../External/Vulkan/Include;$(SolutionDir)../../External/glm;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../../External/Vulkan/Lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -105,6 +106,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -142,10 +146,13 @@
     <ClInclude Include="..\..\Source\FunctionCaller.h" />
     <ClInclude Include="..\..\Source\IFunctionCaller.h" />
     <ClInclude Include="..\..\Source\MemberFunctionCaller.h" />
+    <ClInclude Include="..\..\Source\RenderAPI.h" />
+    <ClInclude Include="..\..\Source\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\glad.c" />
     <ClCompile Include="..\..\Source\glfw.c" />
+    <ClCompile Include="..\..\Source\RenderAPI.cpp" />
+    <ClCompile Include="..\..\Source\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
