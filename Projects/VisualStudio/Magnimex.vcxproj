@@ -76,6 +76,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)../../External/glfw/include;$(SolutionDir)../../External/Vulkan/Include;$(SolutionDir)../../External/glm;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)../../External/Vulkan/Lib;$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -145,7 +146,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\Source\FunctionCaller.h" />
     <ClInclude Include="..\..\Source\IFunctionCaller.h" />
+    <ClInclude Include="..\..\Source\Main.h" />
     <ClInclude Include="..\..\Source\MemberFunctionCaller.h" />
+    <ClInclude Include="..\..\Source\Optional.h" />
     <ClInclude Include="..\..\Source\RenderAPI.h" />
     <ClInclude Include="..\..\Source\Window.h" />
   </ItemGroup>

@@ -1,8 +1,9 @@
+#include <Main.h>
 #include <Window.h>
 
 #include <iostream>
 
-int main()
+void MagMain()
 {
 	mag::Window window("Test");
 	
@@ -10,6 +11,4 @@ int main()
 	{
 		window.PollEvents();
 	}
-
-	return 0;
 }

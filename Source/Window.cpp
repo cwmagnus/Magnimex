@@ -34,11 +34,6 @@ namespace mag
 		glfwTerminate();
 	}
 
-	const char** Window::GetRequiredInstanceExtensions(uint32_t& extensionsCount) const
-	{
-		return glfwGetRequiredInstanceExtensions(&extensionsCount);
-	}
-
 	void Window::PollEvents() const
 	{
 		glfwPollEvents();

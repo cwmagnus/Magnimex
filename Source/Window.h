@@ -13,9 +13,13 @@ namespace mag
 		Window(const std::string& title);
 		~Window();
 
-		const char** GetRequiredInstanceExtensions(uint32_t& extensionsCount) const;
 		void PollEvents() const;
 		bool ShouldClose();
+
+		inline GLFWwindow* GetGLFWwindow() const
+		{
+			return _window;
+		}
 
 		inline std::string GetTitle() const
 		{
